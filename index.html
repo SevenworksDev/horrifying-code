@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <title>Horrifying Javascript</title>
+  </head>
+  <body class="bg-light">
+    <main class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 p-5 mx-auto bg-white border rounded">
+            <h3 class="fw-bold">Horrifying Javascript</h3>
+            <p>
+              Make your code horrifying and harder to steal. (made in 2020, sexier in 2022)
+            </p>
+
+            <form class="mt-4" id="form">
+              <div class="mb-3">
+                <label class="form-label" for="javascriptCode"
+                  >JavaScript Code</label
+                >
+
+                <textarea
+                  id="javascriptCode"
+                  class="form-control"
+                  rows="10"
+                  placeholder="Paste Your Neat Code"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="lockDomains">Lock Domains</label>
+
+                <textarea
+                  id="lockDomains"
+                  class="form-control"
+                  rows="3"
+                  placeholder="jscraft.repl.co,jscraft.repl.com,jscraft.repl.org"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-primary w-100">Horrify</button>
+            </form>
+
+            <form class="mt-4 d-none" id="form2">
+              <div class="mb-3">
+                <label class="form-label" for="output">Output</label>
+
+                <textarea
+                  id="output"
+                  class="form-control"
+                  rows="10"
+                  disabled
+                ></textarea>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <button
+                    id="obfuscateAnotherCode"
+                    type="button"
+                    class="btn btn-primary w-100"
+                  >
+                    Make more code horrifying
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    id="copyBtn"
+                    type="button"
+                    class="btn btn-success w-100"
+                  >
+                    Copy your disgusting code
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/javascript-obfuscator/dist/index.browser.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
